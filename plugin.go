@@ -56,6 +56,7 @@ var Plugin = plugin.Plugin{
 					continue
 				}
 
+				log.Debugf("Button #%d pressed", btnId)
 				go func() { channels.Data <- btnId }()
 			}
 		}
